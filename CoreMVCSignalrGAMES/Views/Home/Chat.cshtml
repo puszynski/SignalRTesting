@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Chat";
+}
+
+<h1>Chat</h1>
+
+<div>
+    <div>
+        <p id="userNickInfo"></p>
+    </div>
+    <div id="setNickButtonArea">
+
+    </div>
+</div>
+
+<p>
+    @*user: <input type="text" id="userInput" />*@
+</p>
+
+<p>
+    message: <input type="text" id="messageInput" /> <input type="button" id="sendButton" value="Send Message" />
+</p>
+
+<hr />
+
+<p>
+    <ul id="messagesList"></ul>
+</p>
+
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
